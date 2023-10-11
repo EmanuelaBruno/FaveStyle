@@ -4,43 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> FAVE Style </title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
-<body>
 
+<body style="background-color: rgb(248, 247, 255);"> <!--Color del Fondo de la pag-->
     <header>
-        <nav>
-            <ul>
-                <li> FAVE Style (Logo) </li>
-                <li> <a href="./info_empresa.html">¿Quienes somos?</a> 
-
-                </li>
-                <li> Productos </li> <!-- Investigar cómo hacer el menú desplegable en el nav, para que muestre las distintas categorías
-                                            de productos -->
-                <li>
-                    <a href="./register.html">
-                        Registrate
-                    </a>
-                </li>
-
-            </ul>
-        </nav>
-     </header>
-
-     <main>
-        <section id="banner">
-            <div style="background-image:url(./static/img/banner.jpg); background-size:cover; height: 400px;" >
-                <h2 style="font-size: 60px;"> Catálogo 2023 </h2>
-            </div>
-            
-        
+        <section id="logo">
+            <center><a href=""><img src="./static/img/2.png" alt="" width="300" height="300"></center></a>
         </section>
 
+    <nav>
+        <ul class="menu-horizontal">
+            <li><a href="#">Inicio</a></li>
+            <li>
+                <a href="#">Tienda</a> <!--Menú desplegable de Tienda-->
+                <ul class="menu-vertical">
+                    <li>
+                        <a href="#">Maquillaje</a>
+                        <ul class="menu-vertical">
+                            <li><a href="#">Ojos</a></li>
+                            <li><a href="#">Rostro</a></li>
+                            <li><a href="#">Labios</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Accesorios</a>
+                        <ul class="menu-vertical">
+                            <li><a href="#">Accesorios para Maquillaje</a></li>
+                            <li><a href="#">Pulseras</a></li>
+                            <li><a href="#">Collares</a></li>
+                            <li><a href="#">Aros</a></li>
+                            <li><a href="#">Anillos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="./info_empresa.html">Acerca de</a></li>
+            <li><a href="./register.html">Login/Registrate</a></li>
+        </ul>
+    </nav>
 
-     </main>
+        <section>
+            <div>
+                <a href=""><img src="./static/img/ojos1.png" alt="" width="100" height="100"></a>
+        </section>
+        <section>
+                <a href=""><img src="./static/img/ojos2.jpg" alt="" width="100" height="100"></a>
+            </div>
+        </section>
+
+<!--Final de Página-->
     <footer>
-        <p> Copyright© 2023 - VAFE Style </p>
+        <center><p> Copyright© 2023 - VAFE Style </p>
         <a href=""> Preguntas frecuentes </a><br>
-        <a href=""> Contacto </a>
+        <a href=""> Contacto </a></center>
     </footer>
+
 </body>
 </html>

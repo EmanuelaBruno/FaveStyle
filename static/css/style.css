@@ -1,0 +1,47 @@
+nav{
+	max-width: 3000px;
+	margin: auto;
+	background-color: rgb(248, 247, 255);
+	font-size: 20px;
+	margin-top: 50px;
+}
+
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+.menu-horizontal > li > a{
+	display: block;
+	padding: 15px 15px;
+	color: black;
+	text-decoration: none;
+}
+
+.menu-horizontal > li:hover{
+	background-color: rgb(255, 255, 252);
+}
+
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 100px;
+	background-color: rgb(255, 255, 252);
+}
+
+.menu-horizontal li:hover .menu-vertical{
+	display: block;
+}
+.menu-vertical li:hover{
+	background-color: rgb(241, 192, 232);
+}
+
+.menu-vertical li a{
+	display: block;
+	color: black;
+	text-decoration: none;
+	padding: 15px 15px 15px 15px;
+    text-decoration: none;
+}
