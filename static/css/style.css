@@ -94,3 +94,15 @@ nav{
 }
 
 /* Fin estilo del carrousel o slider */
+
+/* Estilo de producto_ojos.html */
+
+.item-img{
+    width: 400px;
+}
+
+
+.item-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
