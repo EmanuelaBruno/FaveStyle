@@ -3,31 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>¿Quienes_Somos?</title>
+    <link rel="stylesheet" href="static/css/style.css">
 </head>
-<body>
+<!--Breve descripción de la actividad -->
+<body style="background-color: rgb(248, 247, 255);"> <!--Color del Fondo de la pag-->
     <header>
+        <section id="logo">
+            <center><a href=""><img src="./static/img/2.png" alt="" width="300" height="300"></center></a>
+        </section>
+        
+       <!--Incluyendo el navegador-->
         <nav>
-            <h1>F.A.V.E Style - El secreto de tu belleza (logo)</h1>
-            <ul>
-                <li>Crear Cuenta</li>
-                <li>Iniciar sesión</li>
+            <ul class="menu-horizontal">
+                <li><a href="./index.html">Inicio</a></li>
+                <li>
+                    <a href="#">Tienda</a> <!--Menú desplegable de Tienda-->
+                    <ul class="menu-vertical">
+                        <li>
+                            <a href="#">Maquillaje</a>
+                            <ul class="menu-vertical">
+                                <li><a href="./producto_ojos.html">Ojos</a></li>
+                                <li><a href="./producto_rostro.html">Rostro</a></li>
+                                <li><a href="./producto_labios.html">Labios</a></li>
+                                <li><a href="./accesorios_varios.html">Accesorios</a></li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </li>
+                <li><a href="./info_empresa.html">Acerca de</a></li>
+                <li><a href="./register.html">Login/Registrate</a></li>
             </ul>
         </nav>
         
+        <section>
+            <center>
+                <h1>¿Quienes Somos?</h1>
+                <h2>F.A.V.E. Style - Tu elección en maquillaje</h2>
+                <h3>Somos una pequeña empresa emprendedora, que esta incursionando en la industria del maquillaje <br>
+                    Iniciando con productos locales de la región del Litoral <br>
+                    Hoy nos pusimos como finalidad acercar a todas las personas nuestra variedad <br>
+                    Presentando variedad y accesibilidad en los productos cósmeticos <br>
+                    Porque la belleza esta al alcance de todos!!
+                </h3>
+            </center>
+        </section>
     </header>
-    <!--Información de la Empresa-->
-    <div>
-        <h1>¿Quienes somos?</h1>
-        <br>
-        <h3>Somos F.A.V.E Style, una empresa PYME de cosmética dedicada a la belleza.<br>
-            Ofrecemos productos de la más alta calidad, aprobados por ANMAT. <br>
-            El ente regulador y encargado de la aprobación de los productos médicos y cosmétios en la Argentina 
-        </h3>
-        <h3>
-            Nuestra misión es acercar los mejores productos al precio más accesible del mercado.
-        </h3>
-
-    </div>
+    <footer>
+        <center><p> Copyright© 2023 - VAFE Style </p>
+        <a href=""> Preguntas frecuentes </a><br>
+        <a href=""> Contacto </a></center>
+    </footer>
 </body>
 </html>
