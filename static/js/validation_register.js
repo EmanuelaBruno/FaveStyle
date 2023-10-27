@@ -14,10 +14,11 @@ function calculoEdad(fecha){
 function EmailValido(email){
     
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/.test(email)){
-        alert("La dirección de email " + valor + " es correcta.");
+        resp= true;
        } else {
-        alert("La dirección de email es incorrecta.");
+        resp= false;
        }
+    return resp;
 }
 //Validación de datos al registrarse
 //Vincular con register.html
@@ -28,8 +29,8 @@ const validacion = (evento) => {
     evento.preventDefault();
 
     //seleccionando elementos
-    const nombre = document.querySelector('firstname');
-    const apellido = document.querySelector('lastname');
+    const nombre = document.querySelector('#firstname');
+    const apellido = document.querySelector('#lastname');
     let validation = true;
 
     if(nombre.value===''){
@@ -47,9 +48,9 @@ const validacion = (evento) => {
     }else{ return false; }
 
     //validando fecha de nacimiento No me funciona bien !!!
-    const fecha = document.querySelector('birthday');
+    const fecha = document.querySelector('#birthday');
     let valido = true;
-    calculoEdad(fecha);
+    años = calculoEdad(fecha);
     if(años.value<18){
         valido =false;
         alert('Usted es menor de edad');
@@ -57,8 +58,15 @@ const validacion = (evento) => {
     }
 
     //validando email con funcion
-    const correo = document.querySelector('emailname');
-    EmailValido(correo);
+    const correo = document.querySelector('#emailname');
+    let validado = true;
+    email =EmailValido(correo);
+    if(email.value===false){
+        validado = false;
+        alert('El correo electrónico ingresado no es válido');
+    }
+
+
 
     //Validar contraseña (en este caso no estoy segura de como hacer)
    /*
