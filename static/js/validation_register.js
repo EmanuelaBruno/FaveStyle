@@ -29,8 +29,8 @@ const validacion = (evento) => {
     evento.preventDefault();
 
     //seleccionando elementos
-    const nombre = document.querySelector('firstname');
-    const apellido = document.querySelector('lastname');
+    const nombre = document.querySelector('#firstname');
+    const apellido = document.querySelector('#lastname');
     let validation = true;
 
     if(nombre.value===''){
@@ -48,7 +48,7 @@ const validacion = (evento) => {
     }else{ return false; }
 
     //validando fecha de nacimiento No me funciona bien !!!
-    const fecha = document.querySelector('birthday');
+    const fecha = document.querySelector('#birthday');
     let valido = true;
     años = calculoEdad(fecha);
     if(años.value<18){
@@ -58,7 +58,7 @@ const validacion = (evento) => {
     }
 
     //validando email con funcion
-    const correo = document.querySelector('emailname');
+    const correo = document.querySelector('#emailname');
     let validado = true;
     email =EmailValido(correo);
     if(email.value===false){
