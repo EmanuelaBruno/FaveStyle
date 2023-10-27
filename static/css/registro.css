@@ -1,0 +1,331 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+    margin: 0;
+    padding-bottom: 10em;
+    text-decoration: none;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* REGISTRO DE LA PAGINA */
+
+.Formulario{
+    /* background: linear-gradient(#CFBAF0, #F1C0E8, #FFCFD2, #FDE4CF, #FBF8CC); */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.Formulario h2{
+    text-align: center;
+    padding: 0 0 20px 0; 
+}
+
+.Formulario form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+/*FORM */
+form .firstname{
+    position: relative;
+    border-bottom: 2px solid rgb(105, 105, 105);
+    margin: 30px 0;
+}
+
+form .lastname{
+    position: relative;
+    border-bottom: 2px solid rgb(105, 105, 105);
+    margin: 30px 0;
+}
+
+form .birthday{
+    position: relative;
+    border-bottom: 2px solid rgb(105, 105, 105);
+    margin: 30px 0;
+}
+
+form .phonenumber{
+    position: relative;
+    border-bottom: 2px solid rgb(105, 105, 105);
+    margin: 30px 0;
+}
+
+form .emailaddress{
+    position: relative;
+    border-bottom: 2px solid rgb(105, 105, 105);
+    margin: 30px 0;
+}
+
+form .password{
+    position: relative;
+    border-bottom: 2px solid rgb(105, 105, 105);
+    margin: 30px 0;
+}
+
+/*IMPUT */
+.firstname input{
+    width: 100%;
+    padding: 0 5px;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.lastname input{
+    width: 100%;
+    padding: 0 5px;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.birthday input{
+    width: 100%;
+    padding: 0 5px;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.phonenumber input{
+    width: 100%;
+    padding: 0 5px;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.emailaddress input{
+    width: 100%;
+    padding: 0 5px;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.password input{
+    width: 100%;
+    padding: 0 5px;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+/* LABEL */
+.firstname label{
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.lastname label{
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.birthday label{
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.phonenumber label{
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.emailaddress label{
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.password label{
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+/* SPAN-BEFORE*/
+.firstname span::before{
+    content: " ";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #A3C4F3;
+}
+
+.lastname span::before{
+    content: " ";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #000000;
+}
+
+.birthday span::before{
+    content: " ";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #000000;
+}
+
+.phonenumber span::before{
+    content: " ";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #000000;
+}
+
+.emailaddress span::before{
+    content: " ";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #000000;
+}
+
+.password span::before{
+    content: " ";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #000000;
+}
+
+/* INPU:FOCUS ~ LABEL */
+
+.firstname input:focus ~ label,
+.firstname input:valid ~ label{
+    top: -15px;
+    color: #A3C4F3;
+}
+
+.lastname input:focus ~ label,
+.lastname input:valid ~ label{
+    top: -15px;
+    color: #000000;
+}
+
+.birthday input:focus ~ label,
+.birthday input:valid ~ label{
+    top: -15px;
+    color: #000000;
+}
+
+.phonenumber input:focus ~ label,
+.phonenumber input:valid ~ label{
+    top: -15px;
+    color: #000000;
+}
+
+.emailaddress input:focus ~ label,
+.emailaddress input:valid ~ label{
+    top: -15px;
+    color: #000000;
+}
+
+.password input:focus ~ label,
+.password input:valid ~ label{
+    top: -15px;
+    color: #000000;
+}
+
+/*INPUT:FOCUS ~ SPAN::BEFORE */
+.firstname input:focus ~ span::before,
+.firstname input:focus ~ span::before{
+    width: 100%;
+}
+
+.lastname input:focus ~ span::before,
+.lastname input:focus ~ span::before{
+    width: 100%;
+}
+
+.birthday input:focus ~ span::before,
+.birthday input:focus ~ span::before{
+    width: 100%;
+}
+
+.phonenumber input:focus ~ span::before,
+.phonenumber input:focus ~ span::before{
+    width: 100%;
+}
+
+.emailaddress input:focus ~ span::before,
+.emailaddress input:focus ~ span::before{
+    width: 100%;
+}
+
+.password input:focus ~ span::before,
+.password input:focus ~ span::before{
+    width: 100%;
+}

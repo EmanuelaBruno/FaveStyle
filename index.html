@@ -3,75 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> FAVE Style </title>
+    <title>FAVE Style</title>
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="FAVE Style icon" href="static/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="static/css/index.css"> <!--Archivo Externo de CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Fuente de la pagina -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Fuente de la pagina -->
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet"> <!-- Fuente de la pagina -->
+    <script src="https://kit.fontawesome.com/30d6d9635d.js" crossorigin="anonymous"></script> <!-- Para generar Iconos (flechas)-->
 </head>
-
-<body style="background-color: rgb(248, 247, 255);"> <!--Color del Fondo de la pag-->
-    <header>
-        <section id="logo">
-            <center><a href=""><img src="./static/img/2.png" alt="" width="300" height="300"></center></a>
-        </section>
-
-    <nav>
-        <ul class="menu-horizontal">
-            <li><a href="./index.html">Inicio</a></li>
-            <li>
-                <a href="#">Tienda</a> <!--Menú desplegable de Tienda-->
-                <ul class="menu-vertical">
-                    <li>
-                        <a href="#">Maquillaje</a>
-                        <ul class="menu-vertical">
-                            <li><a href="./producto_ojos.html">Ojos</a></li>
-                            <li><a href="./producto_rostro.html">Rostro</a></li>
-                            <li><a href="./producto_labios.html">Labios</a></li>
-                            <li><a href="./accesorios_varios.html">Accesorios</a></li>
-                        </ul>
-                    </li>
-                <!--<li>Dejo esta parte solo para que no se pierda
-                        <a href="./accesorios_varios.html">Accesorios</a>
-                        <ul class="menu-vertical">
-                            <li><a href="#">Accesorios para Maquillaje</a></li>
-                            <li><a href="#">Pulseras</a></li>
-                            <li><a href="#">Collares</a></li>
-                            <li><a href="#">Aros</a></li>
-                            <li><a href="#">Anillos</a></li>
-                        </ul>
-                    </li> -->
+<body> 
+        <header> <!-- LOGO (Cabecera)-->
+            <div class="logo">
+                <img src="static/img/2.png" alt="FAVE Style">
+            </div>
+            <nav>
+                <ul> <!-- Menú Horizontal superior-->
+                    <li><a href="./register.html">LOGIN/REGISTRATE</a></li>
+                    <li><a href="./info_empresa.html">ACERCA DE NOSOTROS</a></li>
+                    <li><a href="./index.html">INICIO</a></li>
                 </ul>
-            </li>
-            <li><a href="./info_empresa.html">Acerca de</a></li>
-            <li><a href="./register.html">Login/Registrate</a></li>
-        </ul>
-    </nav>
+            </nav>
 
-        <section> <!--Esta sección se ve pequeña y no sé si prefieren sacarla o dejarla-->
-            <div>
-                <a href=""><img src="./static/img/ojos1.png" alt="" width="100" height="100"></a>
+            <div class="clearfix"></div>
+            
+        </header>
+
+        <aside> <!-- Barra lateral izquierda con las categorias -->
+            <h2>CATEGORIAS</h2>
+                <li><a href="#">MAQUILLAJE</a><li></a>
+                    <ul class="menu-vertical">
+                        <li><a href="./producto_ojos.html">OJOS</a></li>
+                        <li><a href="./producto_rostro.html">ROSTRO</a></li>
+                        <li><a href="./producto_labios.html">LABIOS</a></li>
+                    </ul>
+                <li><a href="#">ACCESORIOS</a><li></a>
+                        <ul class="menu-vertical">
+                            <li><a href="./accesorios_varios.html">ACCESORIOS PARA MAQUILLAJE</a></li>
+                            <li><a href="#">PULSERAS</a></li>
+                            <li><a href="#">COLLARES</a></li>
+                            <li><a href="#">AROS</a></li>
+                            <li><a href="#">ANILLOS</a></li>
+                        </ul>
+        </aside>
+
+        <section id="content"> <!-- Contenido principal de la pagina -->
+            <h2>DESTACADOS</h2> 
+            <article class="article">
+                <h4>Base Loreal</h4>
+                <img src="static/img/197398-1200-auto.png" alt="">
+            </article>
+            <article class="article">
+                <h4>Paleta de Rostro</h4>
+                <img src="static/img/239978-1200-auto.png" alt="">
+            </article>
+            <article class="article">
+                <h4>Rizador de Pestañas</h4>
+                <img src="static/img/rizador_pestañas2.jpg" alt="">
+            </article>
+            <article class="article">
+                <h4>Limpia Brochas</h4>
+                <img src="static/img/limpia_brochas.jpg" alt="">
+            </article>
         </section>
-        <section>
-                <a href=""><img src="./static/img/ojos2.jpg" alt="" width="100" height="100"></a>
-            </div>
-        </section>
 
-        <section> <!--Creo que es en esta sección donde nos genera el problema que no se ve el menu-->
-            <div class = "slider-container">
-                <div class="slider">
-                    <img id=slider1 src="static/img/slider1.png" alt="">
-                    <img id=slider2 src="static/img/slider2.jpg" alt="">
-                    <img id=slider3 src="static/img/slider3.jpg" alt="">
-                </div>
-                <div class="slider-nav">
-                    <a href="#slider1"></a>
-                    <a href="#slider2"></a>
-                    <a href="#slider3"></a>
-                </div>
-            </div>
-         </section>
+        <div class="clearfix"></div>
 
-<!--Final de Página-->
-    <footer>
+    <footer> <!--Final de Página-->
         <center><p> Copyright© 2023 - FAVE Style </p>
         <a href=""> Contacto </a></center>
     </footer>
