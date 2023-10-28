@@ -26,11 +26,10 @@
             </nav>
 
             <div class="clearfix"></div>
-            
         </header>
 
         <aside> <!-- Barra lateral izquierda con las categorias -->
-            <h2>CATEGORIAS</h2>
+            <h2 class="item-menu">CATEGORIAS</h2>
                 <li><a href="#">MAQUILLAJE</a><li></a>
                     <ul class="menu-vertical">
                         <li><a href="./producto_ojos.html">OJOS</a></li>
@@ -47,28 +46,43 @@
                         </ul>
         </aside>
 
-        <section id="content"> <!-- Contenido principal de la pagina -->
-            <h2>DESTACADOS</h2> 
-            <article class="article">
-                <h4>Base Loreal</h4>
-                <img src="static/img/197398-1200-auto.png" alt="">
-            </article>
-            <article class="article">
-                <h4>Paleta de Rostro</h4>
-                <img src="static/img/239978-1200-auto.png" alt="">
-            </article>
-            <article class="article">
-                <h4>Rizador de Pestañas</h4>
-                <img src="static/img/rizador_pestañas2.jpg" alt="">
-            </article>
-            <article class="article">
-                <h4>Limpia Brochas</h4>
-                <img src="static/img/limpia_brochas.jpg" alt="">
-            </article>
+        <section> <!-- Contenido principal de la pagina -->
+            <h2>DESTACADOS</h2>
+                <div class="item-flex">
+                    <div class="item" id="item-labial-1">
+                        <img src="./static/img/labial_barra.jpg" width="300" height="300"alt="" class="item-img">
+                        <div class="item-detail">
+                            <p class="item-detail-name"> Nuevo labial en barra "MARAY KAY"- Color Carmin. </p>
+                            <p class="item-detail-price"> $3500 </p>
+                         </div>
+                    </div>
+                    <div class="item" id="item-accesorios-2">
+                        <img src="./static/img/almoadillas_gota.jpg" width="300" height="300"alt="" class="item-img">
+                        <div class="item-detail">
+                            <p class="item-detail-name"> Esponjillas gota "Kitty"</p>
+                            <p class="item-detail-price"> $3200 c/u</p>
+                        </div>        
         </section>
 
         <div class="clearfix"></div>
 
+        <nav> <!-- Slider-->
+            <section>
+                <div class = "slider-container">
+                    <div class="slider">
+                        <img id=slider1 src="static/img/slider1.png" alt="">
+                        <img id=slider2 src="static/img/slider2.jpg" alt="">
+                        <img id=slider3 src="static/img/slider3.jpg" alt="">
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#slider1"></a>
+                        <a href="#slider2"></a>
+                        <a href="#slider3"></a>
+                    </div>
+                </div>
+             </section>
+        </nav>
+        
     <footer> <!--Final de Página-->
         <center><p> Copyright© 2023 - FAVE Style </p>
         <a href=""> Contacto </a></center>
