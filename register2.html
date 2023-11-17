@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="static\css\register2.css">
+</head>
+<body>
+    <main>
+        <form action="" class="formulario" id="formulario">
+            <!--Grupo Usuario-->
+            <div class="formulario_grupo" id="grupo_usuario">
+                <label for="usuario" class="formulario_label">Usuario</label>
+                <div class="formulario_grupo-input">
+                    <input type="text" class="formulario_input" name="usuario" id="usuario" >
+                    
+                </div>
+                <p class="formulario_input-error">El ususario debe ser de 4 a 16 digitos y solo puede contener números,letras y guion bajo</p>
+
+            </div>
+
+            <!--Grupo Nombre-->
+            <div class="formulario_grupo" id="grupo_nombre">
+                <label for="nombre" class="formulario_label">Nombre</label>
+                <div class="formulario_grupo-input">
+                    <input type="text" class="formulario_input" name="nombre" id="nombre" >
+                    
+                </div>
+                <p class="formulario_input-error">El nombre solo puede contener letras y espacios</p>
+
+            </div>
+
+            <!--Grupo Contraseña-->
+            <div class="formulario_grupo" id="grupo_password">
+                <label for="password" class="formulario_label">Contraseña</label>
+                <div class="formulario_grupo-input">
+                    <input type="password" class="formulario_input" name="password" id="password" >
+                    
+                </div>
+                <p class="formulario_input-error">La contraseña debe ser de 4 a 12 digitos</p>
+
+            </div>
+            
+            <!--Grupo Contraseña2-->
+            <div class="formulario_grupo" id="grupo_password2">
+                <label for="password2" class="formulario_label">Repetir Contraseña</label>
+                <div class="formulario_grupo-input">
+                    <input type="password" class="formulario_input" name="password2" id="password2" >
+                    
+                </div>
+                <p class="formulario_input-error">Ambas contraseñas deben ser iguales</p>
+
+            </div>
+
+            <!--Grupo Correo-->
+            <div class="formulario_grupo" id="grupo_correo">
+                <label for="correo" class="formulario_label">Correo Electrónico</label>
+                <div class="formulario_grupo-input">
+                    <input type="email" class="formulario_input" name="correo" id="correo" >
+                    
+                </div>
+                <p class="formulario_input-error">El correo solo puede contener letras, números, puntos, guión y guión bajo</p>
+
+            </div>
+
+            <!--Grupo Telefono-->
+            <div class="formulario_grupo" id="grupo_telefono">
+                <label for="telefono" class="formulario_label">Telefono</label>
+                <div class="formulario_grupo-input">
+                    <input type="email" class="formulario_input" name="telefono" id="telefono" >
+                    
+                </div>
+                <p class="formulario_input-error">El telefono solo puede tener números y el maximo son 14 digitos</p>
+
+            </div>
+
+            <!--Grupo Terminos y Condiciones-->
+            <div class="formulario_grupo" id="grupo_terminos">
+                <label class="formulario_label">
+                    <input class="formulario_checkbox" type="checkbox" name="terminos" id="terminos">
+                    Acepto los terminos y condiciones
+                </label>
+
+            </div>
+
+            <div class="formulario_mensaje" id="formulario_mensaje">
+                <p><b>Error:</b>Por favor, rellene el formulario correctamente</p>
+            </div>
+
+            <div class="formulario_grupo formulario_grupo-btn-enviar">
+                <button type="submit" class="formulario_btn">Registrarse</button>
+                <p class="formulario_mensaje-exito" id="formulario_mensaje-exito">Se ha registrado con éxito!</p>
+            </div>
+        
+        </form>
+    </main>
+    
+    <script src="static\js\validation_register.js"></script>
+</body>
+</html>
