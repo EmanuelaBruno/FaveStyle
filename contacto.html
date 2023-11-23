@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <link rel="stylesheet" href="static\css\contacto.css">
+</head>
+<body>
+    <main>
+        <div class="titulo_contacto">
+            <h2>Para consultas ¡¡¡Contactanos!!! <br>
+                Envianos tus dudas y/o consultas y en la brevedad te responderemos.
+            </h2>
+        </div>
+
+        <section class="formulario_contacto"> <!--Vinculación a API Formspree-->
+            <form action="https://formspree.io/f/xgejjwdr" method="POST" class="form_contacto" id="form_contacto">
+
+                <!--Nombre del Usuario-->
+                <div class="grupo_contacto" id="grupo_nombre">
+                    <label for="nombre" class="nombre_label">Ingrese su nombre <span>*</span></label>
+                    <input name="nombre" required type="text" id="nombre_input">
+
+                </div>
+
+                <!--Correo del Usuario-->
+                <div class="grupo_contacto" id="grupo_email">
+                    <label for="correo" class="correo_label">Ingrese su Email <span>*</span></label>
+                    <input required type="email" name="correo" id="correo_input">
+                </div>
+
+                <!--Mensaje-->
+                <div class="grupo_contacto" id="grupo_mensaje">
+                    <label for="mensaje" class="mensaje_label">Escribe tu consulta</label>
+                    <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+                </div>
+
+                <!--Boton de enviar-->
+                <div class="grupo_contacto">
+                    <button type="submit" class="enviar_btn">Enviar</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+    
+    <footer></footer>
+    
+</body>
+</html>
