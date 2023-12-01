@@ -16,7 +16,7 @@ body {
 header {
     font-family: 'Dosis', sans-serif;
     background-color: rgb(251, 248, 204);
-    height: 100px;
+    height: 80px;
     width: 100%;
     /* border-bottom: 1px solid rgb(158, 156, 156); */
     display: flex;
@@ -25,11 +25,12 @@ header {
     padding: 20px;
     text-decoration: none;
     color: black;
+    font-size: 110%;
 }
 
 .logo img {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
 }
 
 nav ul li{
@@ -39,12 +40,14 @@ nav ul li{
     line-height: 30px;
     text-decoration:none;
     color: black;
+    list-style: none;
     
 }
 
 ul li a{
     text-decoration: none;
     color: black;
+    list-style: none;
 }
 
 .clearfix{
@@ -59,7 +62,9 @@ aside{
     min-height: 500px;
     text-decoration: none;
     padding-left: 1%;
+    padding-top: 2%;
     list-style-type: none;
+    height: 100%;
 }
 
 a{
@@ -71,6 +76,7 @@ a{
 
 /* SLIDER */
 .slider-container {
+    padding-top: 2%;
     position: relative;
     height: 50%;
     width: 50%;
@@ -96,20 +102,21 @@ a{
 
 .slider-nav{
     display: flex;
-    column-gap: 1rem;
+    width: 100%;
     position: absolute;
-    bottom: 1.25rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
+    bottom: -150px;
+    gap: 10px;
+    justify-content: center;
 }
 
 .slider-nav a {
-    width: .5rem;
-    height: .5rem;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
-    background-color: black;
+    background: #ff8097;
     opacity: 70;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
 }
 
 .slider-nav a:hover{
@@ -117,15 +124,10 @@ a{
     background-color: blanchedalmond;
 }
 
-/*LETRAS*/
-.item-menu{
-    font-size: 20px;
-    text-align:start;
-}
-
-h2{
-    font-size: 20px;
-    text-align: center;
+/* DESTACADOS*/
+section{
+    display: grid;
+    grid-template-columns: 1;
 }
 
 /*IMAGENES*/
@@ -138,6 +140,21 @@ h2{
 .item-flex{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*LETRAS*/
+.item-menu{
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    text-align:start;
+    display: flex;
+}
+
+h2{
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    text-align: center;
 }
 
 /* Estilos de pie de página */

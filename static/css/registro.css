@@ -12,10 +12,64 @@ body {
     min-height: 100vh;
 }
 
+/* PARTE SUPERIOR DE LA PAGINA (LOGO Y MENU PRINCIPAL) */
+header {
+    font-family: 'Dosis', sans-serif;
+    background-color: rgb(251, 248, 204);
+    height: 80px;
+    width: 100%;
+    /* border-bottom: 1px solid rgb(158, 156, 156); */
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 110%;
+}
+
+.logo img {
+    width: 120px;
+    height: 120px;
+}
+
+nav ul li{
+    float: right;
+    list-style: none;
+    margin: 20px;
+    line-height: 30px;
+    text-decoration:none;
+    color: black;
+    list-style: none;
+    
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    list-style: none;
+}
+
+.clearfix{
+    clear: both;
+}
+
+main{
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+}
+
+span{
+    color: red;
+}
+
 /* REGISTRO DE LA PAGINA */
 
 .Formulario{
     /* background: linear-gradient(#CFBAF0, #F1C0E8, #FFCFD2, #FDE4CF, #FBF8CC); */
+    font-family: 'Dosis', sans-serif;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -26,47 +80,55 @@ body {
 }
 
 .Formulario h2{
+    font-family: 'Dosis', sans-serif;
     text-align: center;
     padding: 0 0 20px 0; 
 }
 
 .Formulario form{
+    font-family: 'Dosis', sans-serif;
     padding: 0 40px;
     box-sizing: border-box;
 }
 
 /*FORM */
 form .user{
+    font-family: 'Dosis', sans-serif;
     position: relative;
     border-bottom: 2px solid rgb(105, 105, 105);
     margin: 30px 0;
 }
 
 form .name{
+    font-family: 'Dosis', sans-serif;
     position: relative;
     border-bottom: 2px solid rgb(105, 105, 105);
     margin: 30px 0;
 }
 
 form .birthday{
+    font-family: 'Dosis', sans-serif;
     position: relative;
     border-bottom: 2px solid rgb(105, 105, 105);
     margin: 30px 0;
 }
 
 form .phonenumber{
+    font-family: 'Dosis', sans-serif;
     position: relative;
     border-bottom: 2px solid rgb(105, 105, 105);
     margin: 30px 0;
 }
 
 form .emailaddress{
+    font-family: 'Dosis', sans-serif;
     position: relative;
     border-bottom: 2px solid rgb(105, 105, 105);
     margin: 30px 0;
 }
 
 form .password{
+    font-family: 'Dosis', sans-serif;
     position: relative;
     border-bottom: 2px solid rgb(105, 105, 105);
     margin: 30px 0;
@@ -74,6 +136,7 @@ form .password{
 
 /*IMPUT */
 .user input{
+    font-family: 'Dosis', sans-serif;
     width: 100%;
     padding: 0 5px;
     height: 30px;
@@ -84,6 +147,7 @@ form .password{
 }
 
 .name input{
+    font-family: 'Dosis', sans-serif;
     width: 100%;
     padding: 0 5px;
     height: 30px;
@@ -94,6 +158,7 @@ form .password{
 }
 
 .birthday input{
+    font-family: 'Dosis', sans-serif;
     width: 100%;
     padding: 0 5px;
     height: 30px;
@@ -104,6 +169,7 @@ form .password{
 }
 
 .phonenumber input{
+    font-family: 'Dosis', sans-serif;
     width: 100%;
     padding: 0 5px;
     height: 30px;
@@ -114,6 +180,7 @@ form .password{
 }
 
 .emailaddress input{
+    font-family: 'Dosis', sans-serif;
     width: 100%;
     padding: 0 5px;
     height: 30px;
@@ -124,6 +191,7 @@ form .password{
 }
 
 .password input{
+    font-family: 'Dosis', sans-serif;
     width: 100%;
     padding: 0 5px;
     height: 30px;
@@ -135,6 +203,7 @@ form .password{
 
 /* LABEL */
 .user label{
+    font-family: 'Dosis', sans-serif;
     position: absolute;
     top: 10px;
     left: 5px;
@@ -146,6 +215,7 @@ form .password{
 }
 
 .name label{
+    font-family: 'Dosis', sans-serif;
     position: absolute;
     top: 10px;
     left: 5px;
@@ -157,6 +227,7 @@ form .password{
 }
 
 .birthday label{
+    font-family: 'Dosis', sans-serif;
     position: absolute;
     top: 10px;
     left: 5px;
@@ -168,6 +239,7 @@ form .password{
 }
 
 .phonenumber label{
+    font-family: 'Dosis', sans-serif;
     position: absolute;
     top: 10px;
     left: 5px;
@@ -179,6 +251,7 @@ form .password{
 }
 
 .emailaddress label{
+    font-family: 'Dosis', sans-serif;
     position: absolute;
     top: 10px;
     left: 5px;
@@ -190,6 +263,7 @@ form .password{
 }
 
 .password label{
+    font-family: 'Dosis', sans-serif;
     position: absolute;
     top: 10px;
     left: 5px;
@@ -202,6 +276,7 @@ form .password{
 
 /* SPAN-BEFORE*/
 .user span::before{
+    font-family: 'Dosis', sans-serif;
     content: " ";
     position: absolute;
     top: 40px;
@@ -212,6 +287,7 @@ form .password{
 }
 
 .name span::before{
+    font-family: 'Dosis', sans-serif;
     content: " ";
     position: absolute;
     top: 40px;
@@ -222,6 +298,7 @@ form .password{
 }
 
 .birthday span::before{
+    font-family: 'Dosis', sans-serif;
     content: " ";
     position: absolute;
     top: 40px;
@@ -232,6 +309,7 @@ form .password{
 }
 
 .phonenumber span::before{
+    font-family: 'Dosis', sans-serif;
     content: " ";
     position: absolute;
     top: 40px;
@@ -242,6 +320,7 @@ form .password{
 }
 
 .emailaddress span::before{
+    font-family: 'Dosis', sans-serif;
     content: " ";
     position: absolute;
     top: 40px;
@@ -252,6 +331,7 @@ form .password{
 }
 
 .password span::before{
+    font-family: 'Dosis', sans-serif;
     content: " ";
     position: absolute;
     top: 40px;
