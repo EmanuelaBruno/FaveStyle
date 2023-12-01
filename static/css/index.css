@@ -12,6 +12,9 @@ body {
     min-height: 100vh;
 }
 
+/*RESPONSIVE*/
+
+
 /* PARTE SUPERIOR DE LA PAGINA (LOGO Y MENU PRINCIPAL) */
 header {
     font-family: 'Dosis', sans-serif;
@@ -49,6 +52,7 @@ ul li a{
     color: black;
     list-style: none;
 }
+
 
 .clearfix{
     clear: both;
@@ -155,6 +159,17 @@ h2{
     font-family: 'Dosis', sans-serif;
     font-size: 20px;
     text-align: center;
+}
+
+/*MAS VENDIDOS*/
+section h2{
+    padding-top: 20px;
+
+}
+
+/*VIDEO PAGINA PRINCIPAL*/
+iframe{
+    background-color: #ff8097;
 }
 
 /* Estilos de pie de página */
