@@ -110,60 +110,35 @@ li a.activo, li a:hover{
     }
 }
 
-/*CARRUSELL*/
-.Carrusell {
-    width: 100%;
-    height: 430px;
+/* BARRA LATERAL */
+aside{
+    font-family: 'Dosis', sans-serif;
+    float: left;
+    width: calc(20% - 20px);
+    min-height: 500px;
+    text-decoration: none;
+    padding-left: 1%;
+    padding-top: 2%;
+    list-style-type: none;
+    height: 100%;
 }
 
-section{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: flex;
-    width: 100%;
-    height: 430px;
-  }
-  section img{
-    width: 0px;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: .8;
-    transition: .5s ease;
-  }
-  section img:hover{
-    cursor: crosshair;
-    width: 300px;
-    opacity: 1;
-    filter: contrast(120%);
-  }
-
-/*BANNER*/
-main{
-    box-sizing: border-box;
-    width: 100%;
-    background-color: #E4C1F9;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 50px;
-    text-align: center;
-    margin-bottom: 50px;
-}
-i{
-    font-size: 30px;
+a{
+    font-family: 'Dosis', sans-serif;
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
 }
 
-p{
+h1{
     font-size: 20px;
 }
 
-/*DESTACADOS*/
-.item-img{
-    margin: 0 10px;
-}
-
-.item-flex{
-    display: flex;
-    justify-content: center;
+/*MAS VENDIDOS*/
+h2{
+    padding-top: 20px;
+    text-align: center;
+    margin-left: 50%;
 }
 
 /*IMAGENES*/
@@ -197,6 +172,13 @@ h2{
     text-align: center;
     margin-left: 20px;
 }
+
+/*MAS VENDIDOS*/
+section h2{
+    padding-top: 20px;
+
+}
+
 
 /*PIE DE PAGINA*/
 footer {

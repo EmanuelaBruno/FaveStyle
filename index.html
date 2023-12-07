@@ -7,59 +7,93 @@
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="FAVE Style icon" href="static/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="static/css/index.css"> <!--Archivo Externo de CSS -->
+    <link rel="stylesheet" href="static/css/info_empresa.css"> <!--Archivo de CSS para Info Empresa-->
+    <link rel="stylesheet" href="static/css/registro.css"> <!-- Archivo Externo de CSS para el Registro-->
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Fuente de la pagina -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Fuente de la pagina -->
+    <link rel="stylesheet" href="https://fontawesome.com/"> <!-- Icono de Menú-->
+    <link rel="stylesheet" href="static/css/productos.css"> <!--Productos-->
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet"> <!-- Fuente de la pagina -->
     <script src="https://kit.fontawesome.com/72832bb3e6.js" crossorigin="anonymous"></script> <!-- Para generar Iconos (flechas)-->
 </head>
-<body> 
-        <header> <!-- LOGO (Cabecera)-->
-            <div class="logo">
-                <img src="static/img/2.png" alt="FAVE Style">
-            </div>
-            <nav>
-                <ul> <!-- Menú Horizontal superior-->
-                    <li><a href="./register2.html">LOGIN/REGISTRATE</a></li>
-                    <li><a href="./info_empresa.html">ACERCA DE NOSOTROS</a></li>
-                    <li><a href="./productos.html">PRODUCTOS</a></li>
-                    <li><a href="./index.html">INICIO</a></li>
-                </ul>
-            </nav>
+<body>
+        <nav> <!--MENÚ PRINCIPAL-->
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
 
-            <div class="clearfix"></div>
+            <a href="#" class="enlace">
+                <img src="static/img/LOGO.png" alt="logo">
+            </a>
 
-        </header>
+            <ul>
+                <li><a class="activo" href="#">Inicio</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./info_empresa.html">Nosotros</a></li>
+                <li><a href="./register2.html">Registro</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
 
-        <nav> <!-- Slider-->
-            <section>
-                <div class = "slider-container">
-                    <div class="slider">
-                        <img id=slider1 src="static/img/slider1.png" alt="">
-                        <img id=slider2 src="static/img/slider2.jpg" alt="">
-                        <img id=slider3 src="static/img/slider3.jpg" alt="">
-                    </div>
-                    <div class="slider-nav">
-                        <a href="#slider1"></a>
-                        <a href="#slider2"></a>
-                        <a href="#slider3"></a>
+        <!--CARRUSELL PAGINA PRINCIPAL-->
+        <section id="Carrusell">
+            <img src="/static/img/CARRUSELL1 (1).jpg" alt="">
+            <img src="/static/img/CARRUSELL1 (2).jpg" alt="">
+            <img src="/static/img/CARRUSELL1 (3).jpg" alt="">
+            <img src="/static/img/CARRUSELL1 (4).jpg" alt="">
+            <img src="/static/img/CARRUSELL1 (5).jpg" alt="">
+            <img src="/static/img/CARRUSELL1 (6).jpg" alt="">
+            <img src="/static/img/CARRUSELL1 (7).jpg" alt="">
+            <img src="/static/img/CARRUSELL1 (8).jpg" alt="">
+        </section>
+
+        <!--BANNER DE INFORMACIÓN-->
+        <main id="banner">
+            <i class="fa-solid fa-truck"></i>
+            <p id="text">Envíos a todo el país</p>
+            <p>Por Correo Argentino 72 hs hábiles o Cadetería en el transcurso del día</p>
+        </main>
+
+             <!--PRODUCTOS DESTACADOS-->
+            <h1>PRODUCTOS DESTACADOS</h1>
+            <div class="item-flex">
+                <div class="item" id="item-ojos-1">
+                    <img src="/static/img/ojos2.jpg" alt="" class="item-img">
+                    <div class="item-detail">
+                        <p class="item-detail-name"> Paleta de Sombras para Ojos - Atraction Palette </p>
+                        <p class="item-detail-price"> $6400 </p>
                     </div>
                 </div>
-             </section>
-        </nav>
-    
-    <!--VIDEO PAGINA PRINCIPAL-->
-    <iframe src="/static/videos/makeupMe Professional Cosmetics Promo Demo Video промо-видеоролик.mp4" style="width: 100%; height: 500px;border: none; margin-top: 50px;" start="autoplay; start: 0;"></iframe>
-    
+                <div class="item" id="item-ojos-2">
+                    <img src="/static/img/labial-liquido-matte.jpg" alt="" class="item-img">
+                    <div class="item-detail">
+                        <p class="item-detail-name"> Labial Liquido Matte - UP! </p>
+                        <p class="item-detail-price"> $3200 </p>
+                    </div>
+                </div>
+                <div class="item" id="item-accesorios-2">
+                    <img src="/static/img/236492-1200-auto.jpg" alt="" class="item-img">
+                    <div class="item-detail">
+                        <p class="item-detail-name"> Corrector de Ojeras - Rimmel</p>
+                        <p class="item-detail-price"> $5000</p>
+                    </div>
+                </div>
+                <div class="item" id="item-rizador-1">
+                    <img src="/static/img/kit-x-2-almohaditas-de-maquillaje.jpg" alt="" class="item-img">
+                    <div class="item-detail">
+                        <p class="item-detail-name"> Almohadillas para Polvos Traslucidos - Trendy </p>
+                        <p class="item-detail-price"> $1500 c/u </p>
+                    </div>
+                </div>
+            </div>
 
-
-        <div class="clearfix"></div>
-
-    <footer> <!--Final de Página-->
-        <center><p> Copyright© 2023 - FAVE Style </p>
-        <a href="contacto.html"> Contacto
-            <i class="fa-brands fa-instagram fa-lg" style="color: #8671da;"></i> 
-        </a></center>
-    </footer>
-
+        <footer> <!--FINAL DE PAGINA-->
+            <center><p> Copyright© 2023 - FAVE Style </p>
+            <a href="contacto.html"> Contacto
+                <i class="fa-brands fa-instagram fa-lg" style="color: #8671da;"></i> 
+            </a></center>
+        </footer>
+        
 </body>
 </html>
