@@ -1,0 +1,63 @@
+<!--Falta editar unas referenias de estilo-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Productos</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="">
+
+    <script>
+        const boton_eliminar = (id) =>{
+            if(window.confirm("¿Esta seguro de eliminar el Producto?")){
+                window.location.href ='';
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container text-center">
+        <h1>Listado de Productos</h1>
+        <h4><a href="">Volver a Index</a></h4>
+
+        <table border="1" class="table table-hover">
+            <tr bgcolor="lightgray">
+                <th>ID</th>
+                <th>NOMBRE</th>
+                <th>TIPO</th>
+                <th>DESCRIPCION</th>
+                <th>STOCK</th>
+                <th>PRECIO</th>
+                <th>EDITAR</th>
+                <th>ELIMINAR</th>
+            </tr>
+
+            <tr class="align-middle">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <a href="" class="btn btn-lg">
+                        <i class="bi bi-pencil-fill"></i>
+                    </a>
+                </td>
+                <td>
+                    <button type="button" onclick="" class="btn ">
+                        <i class="bi bi-trash-fill"></i>
+                    </button>
+                </td>
+
+            </tr>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="stylesheet""></script>
+    
+</body>
+</html>

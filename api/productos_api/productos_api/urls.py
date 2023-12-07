@@ -1,4 +1,4 @@
-"""fave_API URL Configuration
+"""productos_api URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -16,6 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from productos import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.mostrar_index),
+    path('form_crear', views.mostrar_crear),
+    path('listado', views.mostrar_listado),
+    path('form_editar', views.mostrar_editar)
 ]
