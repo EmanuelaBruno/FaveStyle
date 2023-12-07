@@ -7,29 +7,34 @@
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="FAVE Style icon" href="static/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="static/css/index.css"> <!--Archivo Externo de CSS -->
+    <link rel="stylesheet" href="static/css/info_empresa.css"> <!--Archivo de CSS para Info Empresa-->
     <link rel="stylesheet" href="static/css/registro.css"> <!-- Archivo Externo de CSS para el Registro-->
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Fuente de la pagina -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Fuente de la pagina -->
+    <link rel="stylesheet" href="https://fontawesome.com/"> <!-- Icono de Menú-->
+    <link rel="stylesheet" href="static/css/productos.css"> <!--Productos-->
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet"> <!-- Fuente de la pagina -->
     <script src="https://kit.fontawesome.com/30d6d9635d.js" crossorigin="anonymous"></script> <!-- Para generar Iconos (flechas)-->
 </head>
 <body> 
-    <header> <!-- LOGO (Cabecera)-->
-        <div class="logo">
-            <img src="static/img/2.png" alt="FAVE Style">
-        </div>
-        <nav>
-            <ul> <!-- Menú Horizontal superior-->
-                <li><a href="./register2.html">LOGIN/REGISTRATE</a></li>
-                <li><a href="./info_empresa.html">ACERCA DE NOSOTROS</a></li>
-                <li><a href="./productos.html">PRODUCTOS</a></li>
-                <li><a href="./index.html">INICIO</a></li>
-            </ul>
-        </nav>
+    <nav> <!--MENÚ PRINCIPAL-->
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
 
-        <div class="clearfix"></div>
+        <a href="#" class="enlace">
+            <img src="static/img/LOGO.png" alt="logo">
+        </a>
 
-    </header>
+        <ul>
+            <li><a class="activo" href="#">Inicio</a></li>
+            <li><a href="./productos.html">Productos</a></li>
+            <li><a href="./info_empresa.html">Nosotros</a></li>
+            <li><a href="./register2.html">Registro</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
 
         <aside> <!-- Barra lateral izquierda con las categorias -->
             <h2 class="item-menu">CATEGORIAS</h2>
@@ -42,14 +47,9 @@
                 <li><a href="#">ACCESORIOS</a><li></a>
                         <ul class="menu-vertical">
                             <li><a href="./accesorios_varios.html">ACCESORIOS PARA MAQUILLAJE</a></li>
-                            <li><a href="#">PULSERAS</a></li>
-                            <li><a href="#">COLLARES</a></li>
-                            <li><a href="#">AROS</a></li>
-                            <li><a href="#">ANILLOS</a></li>
                         </ul>
         </aside>
         
-    <section>
         <div class="item-flex">
             <div class="item" id="item-ojos-1">
                 <img src="./static/img/204521-1200-auto.jpg" alt="" class="item-img">
@@ -107,17 +107,14 @@
                     <p class="item-detail-price"> $8700 </p>
                 </div>
             </div>
-            
-
-
         </div>
-    </section>
     
-    <footer> <!--Final de Página-->
+    <footer> <!--FINAL DE PAGINA-->
         <center><p> Copyright© 2023 - FAVE Style </p>
         <a href="contacto.html"> Contacto
-            <i class="fa-brands fa-instagram fa-lg" style="color: #8671da;"></i>
-         </a></center>
+            <i class="fa-brands fa-instagram fa-lg" style="color: #8671da;"></i> 
+        </a></center>
     </footer>
+    
 </body>
 </html>

@@ -1,72 +1,116 @@
 *{
-    margin: 0px;
-    padding: 0px;
-}
-
-body {
-    font-family: 'Dosis', sans-serif;
+    padding: 0;
     margin: 0;
-    padding-bottom: 10em;
     text-decoration: none;
-    position: relative;
-    min-height: 100vh;
-}
-
-/* PARTE SUPERIOR DE LA PAGINA (LOGO Y MENU PRINCIPAL) */
-header {
+    list-style: none;
+    box-sizing: border-box;
     font-family: 'Dosis', sans-serif;
-    background-color: rgb(251, 248, 204);
-    height: 80px;
-    width: 100%;
-    /* border-bottom: 1px solid rgb(158, 156, 156); */
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    padding: 20px;
-    text-decoration: none;
-    color: black;
-    font-size: 110%;
 }
 
-.logo img {
-    width: 120px;
-    height: 120px;
+/*MENU PRINCIPAL*/
+nav{
+    background: #D0F4DE;
+    height: 100px;
+    width: 100%;
+}
+
+.enlace{
+    position: absolute;
+    padding: 10px 50px;
+}
+
+.logo{
+    height: 50px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
 }
 
 nav ul li{
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+li a.activo, li a:hover{
+    background: #FCF6BD;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #FCF6BD;
     float: right;
-    list-style: none;
-    margin: 20px;
-    line-height: 30px;
-    text-decoration:none;
-    color: black;
-    list-style: none;
+    line-height: 100px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+/*RESPONSIVE DEL MENÚ*/
+
+@media (max-width: 952px){ /*TABLET*/
+    .enlace{
+        padding-left: 20px;
+    }
     
+    nav ul li a{
+        font-size: 16px;
+    }
 }
 
-ul li a{
-    text-decoration: none;
-    color: black;
-    list-style: none;
-}
+@media (max-width: 858px){ /*CELULAR*/
+    .checkbtn{
+        display: block;
+    }
 
-.clearfix{
-    clear: both;
-}
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #A9DEF9;
+        top: 100px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
 
-main{
-    max-width: 800px;
-    width: 90%;
-    margin: auto;
-    padding: 40px;
-}
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
 
-span{
-    color: red;
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+
+    }
 }
 
 /* REGISTRO DE LA PAGINA */
-
 .Formulario{
     /* background: linear-gradient(#CFBAF0, #F1C0E8, #FFCFD2, #FDE4CF, #FBF8CC); */
     font-family: 'Dosis', sans-serif;
@@ -410,3 +454,16 @@ form .password{
     width: 100%;
 }
 
+/*PIE DE PAGINA*/
+footer {
+    align-self: flex-end;
+    float: bottom;
+    bottom: 0;
+    width: 100%;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 50px;
+}

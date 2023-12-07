@@ -11,28 +11,33 @@
     <link rel="stylesheet" href="static/css/registro.css"> <!-- Archivo Externo de CSS para el Registro-->
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Fuente de la pagina -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Fuente de la pagina -->
+    <link rel="stylesheet" href="https://fontawesome.com/"> <!-- Icono de Menú-->
+    <link rel="stylesheet" href="static/css/productos.css"> <!--Productos-->
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet"> <!-- Fuente de la pagina -->
     <script src="https://kit.fontawesome.com/30d6d9635d.js" crossorigin="anonymous"></script> <!-- Para generar Iconos (flechas)-->
 </head>
 <body> 
-    <header> <!-- LOGO (Cabecera)-->
-        <div class="logo">
-            <img src="static/img/2.png" alt="FAVE Style">
-        </div>
-        <nav>
-            <ul> <!-- Menú Horizontal superior-->
-                <li><a href="./register2.html">LOGIN/REGISTRATE</a></li>
-                <li><a href="./info_empresa.html">ACERCA DE NOSOTROS</a></li>
-                <li><a href="./productos.html">PRODUCTOS</a></li>
-                <li><a href="./index.html">INICIO</a></li>
+
+        <nav> <!--MENÚ PRINCIPAL-->
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+             </label>
+
+             <a href="#" class="enlace">
+                <img src="static/img/LOGO.png" alt="logo">
+            </a>
+
+            <ul>
+                <li><a class="activo" href="#">Inicio</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./info_empresa.html">Nosotros</a></li>
+                <li><a href="./register2.html">Registro</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
-
-        <div class="clearfix"></div>
         
-    </header>
-        
-        <section> <!--QUIENES SOMOS-->
+        <section style="background: #E4C1F9;"> <!--QUIENES SOMOS-->
             <center> </br>
                 <h1>¿QUIENES SOMOS? </br>
                 FAVE STYLE - TU ELECCIÓN EN MAQUILLAJE </br>
@@ -46,13 +51,16 @@
         </section> </br>
     </header>
 
-    <iframe src="/static/videos/pexels-yan-krukov-8836118 (Original).mp4"></iframe> <!--IFRAME-->
+    <div class="video.container" style="background: #E4C1F9;">
+        <iframe src="/static/videos/pexels-yan-krukov-8836118 (Original).mp4"></iframe> <!--IFRAME-->
+    </div>
     
-    <footer> <!--Final de Página-->
+    <footer style="background: #E4C1F9;"> <!--FINAL DE PAGINA-->
         <center><p> Copyright© 2023 - FAVE Style </p>
         <a href="contacto.html"> Contacto
-            <i class="fa-brands fa-instagram fa-lg" style="color: #8671da;"></i>
-         </a></center>
+            <i class="fa-brands fa-instagram fa-lg" style="color: #8671da;"></i> 
+        </a></center>
     </footer>
+
 </body>
 </html>
