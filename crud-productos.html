@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="static\css\register2.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="FAVE Style icon" href="static/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="static/css/index.css"> <!--Archivo Externo de CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Fuente de la pagina -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Fuente de la pagina -->
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet"> <!-- Fuente de la pagina -->
+    <script src="https://kit.fontawesome.com/72832bb3e6.js" crossorigin="anonymous"></script> <!-- Para generar Iconos (flechas)-->
+</head>
+<body>
+    <nav> <!--MENÚ PRINCIPAL-->
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <a href="#" class="enlace">
+            <img src="static/img/LOGO.png" alt="logo">
+        </a>
+
+        <ul>
+            <li><a class="activo" href="#">Inicio</a></li>
+            <li><a href="./productos.html">Productos</a></li>
+            <li><a href="./info_empresa.html">Nosotros</a></li>
+            <li><a href="./register2.html">Registro</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+
+
+    <main>
+        <div id="app">
+            <section id="form" >                    
+                <form action="" enctype="multipart/form-data" id="form-producto">
+                    <div class="container d-flex">
+                        <div class="form-control d-flex-column">
+                            <label for="">Nombre</label>
+                            <input type="text" class="input-search" name="nombre" id="nombre" v-model="nombre">
+                        </div>
+                        <div class="form-control d-flex-column">
+                            <label for="">Tipo</label>
+                            <input type="text" class="input-search" name="tipo" id="tipo" v-model="tipo">
+                        </div>
+                        <div class="form-control d-flex-column">
+                            <label for="">Precio</label>
+                            <input type="number" class="input-search" name="precio" id="precio" v-model="precio">
+                        </div>
+                        <div class="form-control d-flex-column">
+                            <label for="">Descripción</label>
+                            <input type="text" class="input-search" name="descripcion" id="descripcion" v-model="descripcion">
+                        </div>
+                        <div class="form-control d-flex-column">
+                            <label for="">Stock</label>
+                            <input type="number" class="input-search" name="stock" id="stock" v-model="stock">
+                        </div>
+                        <input type="hidden" class="" name="id" id="id_producto" v-model="id_producto">
+                        <button class="btn-fave" type="button" id="btn-add-producto" v-on:click="saveProducto()">Agregar</button>
+                    </div>
+                </form>
+            </section>
+
+            <section id="list" class="container">
+                <h2 class="search-title">Listado de productos</h2>
+                <table id="list-table-productos" class="table">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Tipo</th>
+                            <th>Precio</th>
+                            <th>Descripción</th>
+                            <th>Stock</th>
+                            <th>Opciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="producto in productos">
+                            <td>{{producto.nombre}}</td>
+                            <td>{{producto.tipo}}</td>
+                            <td>{{producto.precio}}</td>
+                            <td>{{producto.descripcion}}</td>
+                            <td>{{producto.stock}}</td>
+                            <td>
+                                <button class="btn-cac" v-on:click="getProducto(producto.id)"><i class="fa fa-pencil" ></button></i>
+                                <button class="btn-cac" v-on:click="deleteProducto(producto.id)"><i class="fa fa-trash" ></button></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <footer> <!--FINAL DE PAGINA-->
+        <center><p> Copyright© 2023 - FAVE Style </p>
+        <a href="contacto.html"> Contacto
+            <i class="fa-brands fa-instagram fa-lg" style="color: #8671da;"></i> 
+        </a></center>
+    </footer>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./static/js/crud-productos-vue.js"></script>
