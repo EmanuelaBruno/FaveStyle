@@ -6,8 +6,8 @@
     <title>Formulario de Registro</title>
     <link rel="stylesheet" href="static\css\register2.css">
     <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="/static/css/crud-productos.css">
     <link rel="FAVE Style icon" href="static/img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="static/css/index.css"> <!--Archivo Externo de CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Fuente de la pagina -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Fuente de la pagina -->
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet"> <!-- Fuente de la pagina -->
@@ -38,36 +38,36 @@
     <main>
         <div id="app">
             <section id="form" >                    
-                <form action="" enctype="multipart/form-data" id="form-producto">
+                <form action="" class='formulario' id="form-producto">
                     <div class="container d-flex">
                         <div class="form-control d-flex-column">
-                            <label for="">Nombre</label>
-                            <input type="text" class="input-search" name="nombre" id="nombre" v-model="nombre">
+                            <label class="formulario_label" for="">Nombre</label>
+                            <input type="text" class="formulario_input" name="nombre" id="nombre" v-model="nombre">
                         </div>
                         <div class="form-control d-flex-column">
-                            <label for="">Tipo</label>
-                            <input type="text" class="input-search" name="tipo" id="tipo" v-model="tipo">
+                            <label class="formulario_label" for="">Tipo</label>
+                            <input type="text" class="formulario_input" name="tipo" id="tipo" v-model="tipo">
                         </div>
                         <div class="form-control d-flex-column">
-                            <label for="">Precio</label>
-                            <input type="number" class="input-search" name="precio" id="precio" v-model="precio">
+                            <label class="formulario_label" for="">Precio</label>
+                            <input type="number" class="formulario_input" name="precio" id="precio" v-model="precio">
                         </div>
                         <div class="form-control d-flex-column">
-                            <label for="">Descripción</label>
-                            <input type="text" class="input-search" name="descripcion" id="descripcion" v-model="descripcion">
+                            <label class="formulario_label" for="">Descripción</label>
+                            <input type="text" class="formulario_input" name="descripcion" id="descripcion" v-model="descripcion">
                         </div>
                         <div class="form-control d-flex-column">
-                            <label for="">Stock</label>
-                            <input type="number" class="input-search" name="stock" id="stock" v-model="stock">
+                            <label class="formulario_label" for="">Stock</label>
+                            <input type="number" class="formulario_input" name="stock" id="stock" v-model="stock">
                         </div>
                         <input type="hidden" class="" name="id" id="id_producto" v-model="id_producto">
-                        <button class="btn-fave" type="button" id="btn-add-producto" v-on:click="saveProducto()">Agregar</button>
+                        <button class="btn-fave" type="button" v-on:click="saveProducto()">Agregar</button>
                     </div>
                 </form>
             </section>
 
             <section id="list" class="container">
-                <h2 class="search-title">Listado de productos</h2>
+                <h2 class="list-title">Listado de productos</h2>
                 <table id="list-table-productos" class="table">
                     <thead>
                         <tr>
@@ -87,8 +87,8 @@
                             <td>{{producto.descripcion}}</td>
                             <td>{{producto.stock}}</td>
                             <td>
-                                <button class="btn-cac" v-on:click="getProducto(producto.id)"><i class="fa fa-pencil" ></button></i>
-                                <button class="btn-cac" v-on:click="deleteProducto(producto.id)"><i class="fa fa-trash" ></button></i>
+                                <button class="btn-fave" v-on:click="getProducto(producto.id)"><i class="fa fa-pencil" ></button></i>
+                                <button class="btn-fave" v-on:click="deleteProducto(producto.id)"><i class="fa fa-trash" ></button></i>
                             </td>
                         </tr>
                     </tbody>
