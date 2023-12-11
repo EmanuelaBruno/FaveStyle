@@ -1,3 +1,12 @@
+#form{
+    margin-top: 30px;
+}
+
+.d-flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
 .d-flex{
     display: flex;
     justify-content: center;
@@ -6,6 +15,8 @@
 }
 
 .formulario {
+    display: flex;
+    flex-direction: column;
     background: #fcfcda;
     margin-top: 10px;
     height: 120px;
@@ -28,6 +39,8 @@
 }
 
 .btn-fave{
+    margin-top: 40px;
+    margin-left: 15px;
     background-color: #FFB7C3;
     padding: 10px;
     border-radius: 10px;
@@ -71,4 +84,14 @@
 }
 .table td{
     border-bottom: 1px solid #4f4f4f;
+}
+
+/*Mediaqueris*/
+    
+@media (max-width : 858px){
+    .table{
+        overflow-x: auto;
+    }
+
+    
 }
